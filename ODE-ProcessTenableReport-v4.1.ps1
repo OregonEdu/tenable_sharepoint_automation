@@ -3,7 +3,7 @@
 #
 #  Requirements: An Entra application with SharePoint delegate API permissions
 #
-#  This script will automatically process a Tenable WAS scan results JSON file to a SharePoint site. It automated SharePoint List creation as well uploading files to the Document library. It is extremely modular and has functions
+#  This script will automatically process a Tenable WAS scan results JSON file to a SharePoint site. It automates SharePoint List creation as well uploading files to the Document library. It is extremely modular and has functions
 #  for virtually every aspect of SharePoint automation and thus could be dissected for any type of SharePoint automation tasks.
 
 # Add .NET Forms
@@ -70,7 +70,7 @@ $odeTenableSummaryList = [ordered]@{
 # Yes, 4 versions.
 $scriptVersion = "v4.1"
 # Base tenant SharePoint URL
-$tenantDomain = "https://odemail.sharepoint.com"
+$tenantDomain = "<INSERT_URL_OF_TENANT_SHAREPOINT_HERE>"
 # Name of the SharePoint List housing the schedule of the Tenable WAS schedule -- %20 is a space
 $spoScanScheduleList = "Scan%20Schedule"
 # Name of the SharePoint List housing the summary of the Tenable WAS scans
@@ -96,9 +96,9 @@ $odeTenableWasSummaryContentType = "0x0100C7B3916115D23E4587BB46A268B5EC0B"
 # My kick-ass Amiga font ascii for the splash screen
 $odeLogo = ".\ODE_WAS.png"
 # Client ID of odeSPO Azure application
-$clientId = "ae024a63-55de-4205-a6a2-e5fc1394f389"
+$clientId = "<INSERT_CLIENTID_OF_ENTRA_APPLICATION_WITH_SHAREPOINT_DELEGATE_API_PERMISSIONS_HERE>"
 # ODE's tenant ID in Azure
-$tenantId = "b4f51418-b269-49a2-935a-fa54bf584fc8"
+$tenantId = "<INSERT_TENANTID_HERE>"
 # Resource for token authentication
 $resource = "https://graph.microsoft.com/"
 
